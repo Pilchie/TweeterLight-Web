@@ -2,6 +2,37 @@
     ViewBag.Title = "Privacy";
 }
 
-<h3>Windows 8</h3>
+<p>TweeterLight doesn't use any of your information for anything other than the obvious.  It doesn't
+send any information about you or your account to anything other than the services mentioned below.
+</p>
 
-<h3>Windows Phone</h3>
+<h3>OAuth</h3>
+<p>When you log in to TweeterLight, you actually provide your password directly to <a href="http://twitter.com" target="_blank">Twitter</a>.  
+Then, Twitter provides TweeterLight with a "token" to remember you.  This token is not your password, nor can your
+password be computed from it. <b>TweeterLight never gets your Twitter password.</b>.  The way this works is called
+<em>OAuth</em>, and there is a good <a href="http://en.wikipedia.org/wiki/OAuth" target="_blank">wikipedia article</a> about it if you 
+are interested in the details.</p>
+
+<h3>TweetMarker</h3>
+<p>TweeterLight stores the id of your most recently read tweets using <a href="http://tweetmarker.net/" target="_blank">TweetMarker</a>.
+    OAuth provides for a way to prove who you are, to another service without allowing that other service to 
+    impersonate you, and this is used to associate your account with the data without actually revealing your twitter
+    password.
+
+    TweetMarker functionality is optional, and can be disabled in the app settings.
+</p>
+
+<h3>TwitPic</h3>
+<p>Similarly, TweeterLight will use your twitter authentication to upload pictures to <a href="http://twitpic.com" target="_blank">TwitPic</a>.</p>
+
+<h3>Windows 8 specific issues</h3>
+<p>On Windows 8, TweeterLight stores the OAuth token in Window's "Roaming Settings", so that you don't have to log in
+    on each machine you have.  The is accomplished entirely by the operating system.  TweeterLight does not itself
+    transfer any information between machines.
+</p>
+
+<h3>Windows Phone specific issues</h3>
+<p>TweeterLight for Windows Phone supports posting tweets that include geocoordinate and place data.  TweeterLight <em>ONLY</em>
+    puts the place information in your tweets - no position information is ever saved or transmitted anywhere else.
+    This functionality is optional, and can be disabled in the app settings.
+</p>
